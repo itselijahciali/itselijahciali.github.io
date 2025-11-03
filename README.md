@@ -1,4 +1,4 @@
-# How to install Arch, by the way
+<img width="1852" height="700" alt="image" src="https://github.com/user-attachments/assets/6a7c594d-e036-4c2a-a193-db777be04519" /># How to install Arch, by the way
 
 # Installation Guide
 
@@ -18,7 +18,7 @@ VMWare doesn’t have a native “Arch Linux” option but rather a generic “O
 
 Archboot has many more GRUB options for IPXE boot and other methods. I choose the standard boot option and it takes me to an interactive shell. From here, I should be able to continue an install like usual. Just to be sure though, I ran a `ping` command to check if the VM and install were configured for internet access.
 
-![Screenshot 2025-10-23 at 2.04.51 PM.png](https://github.com/itselijahciali/itselijahciali.github.io/blob/main/Screenshot 2025-10-23 at 2.04.51 PM.png?raw=true)
+![Screenshot 2025-10-23 at 2.04.51 PM.png](https://github.com/itselijahciali/itselijahciali.github.io/blob/main/Screenshot_2025-10-23_at_2.04.51_PM.png?raw=true)
 
 ## Setting up the preinstallation environment
 
@@ -33,7 +33,7 @@ Some basic steps are configured for me:
 
 VMWare’s 20GB drive I made is recognized by the `fdisk -l` command:
 
-![Screenshot 2025-10-23 at 2.11.50 PM.png](https://github.com/itselijahciali/itselijahciali.github.io/blob/main/Screenshot_2025-10-23_at_2.04.51_PM.png?raw=true)
+![Screenshot 2025-10-23 at 2.11.50 PM.png](https://github.com/itselijahciali/itselijahciali.github.io/blob/main/Screenshot_2025-10-23_at_2.11.50_PM.png?raw=true)
 
 Arch and most Linux distributions expect several partitions, being **root**, **swap**, and **efi**. I will make the last two first and then use the remaining size to make the root partition.
 
@@ -51,7 +51,7 @@ Using `fdisk -l` as a reference for device names, I can run `mkfs.ext4 /dev/nvme
 
 ## Mounting
 
-![Screenshot 2025-10-28 at 2.36.11 PM.png](How%20to%20install%20Arch,%20by%20the%20way%20293130f4ceea805b9d3bf399d341d0e6/Screenshot_2025-10-28_at_2.36.11_PM.png)
+![Screenshot 2025-10-28 at 2.36.11 PM.png](https://github.com/itselijahciali/itselijahciali.github.io/blob/main/Screenshot_2025-10-28_at_2.36.11_PM.png?raw=true)
 
 I can now mount the 2 filesystems and enable the swap partition.
 
@@ -87,7 +87,7 @@ The installation guide presents a command that does not work on my system, but a
 
 So you just read that last sentence, right? The one that had the words “no errors”– turns out, the only thing worse that getting an error in Linux is not getting one but still having problems. It turns out Grub wasn’t able to find Linux at all. After 2 days of troubleshooting I finally figured out that pacstrap didn’t really install Linux. It was able to make the initramfs and everything else, but never actually made the vmlinux image. AKA, the kernel itself. Turns out this is not a trivial fix. Out of time, I turned to what everybody turns to in their darkest hour.
 
-![IMG_1681.HEIC](How%20to%20install%20Arch,%20by%20the%20way%20293130f4ceea805b9d3bf399d341d0e6/IMG_1681.heic)
+![IMG_1681.HEIC](https://github.com/itselijahciali/itselijahciali.github.io/blob/main/IMG_1681.HEIC?raw=true)
 
 I’ve never been let down by a ThinkPad, and this time would be no different. After burning an ISO onto a disk, it was clear my only way to move forward was to install Arch the way it’s developers intended– on a ThinkPad from 2012 with a broken screen. The high school laptop saves the day again!
 
@@ -129,10 +129,9 @@ Finally, back to grub. This is where I failed last time, so I’m hoping I have 
 
 Once I exited the chroot environment and rebooted, I was on my own. Just a simple tty terminal is what I’m left with.
 
-![Screenshot 2025-11-02 at 10.00.00 PM.png](How%20to%20install%20Arch,%20by%20the%20way%20293130f4ceea805b9d3bf399d341d0e6/Screenshot_2025-11-02_at_10.00.00_PM.png)
+![Screenshot 2025-11-02 at 10.00.00 PM.png](https://github.com/itselijahciali/itselijahciali.github.io/blob/main/Screenshot_2025-11-02_at_10.00.00_PM.png?raw=true)
 
 > *Is this hell?*
-> 
 
 After reconfiguring the network (and configuring iwd to setup DHCP) and setting up Cloudflare DNS, I’m connected to the internet. I can now install packages!
 
@@ -165,3 +164,4 @@ Finally, I want to install a desktop environment. I’m installing KDE Plasma be
 Once everything is installed SDDM should land me in a graphical login on the next reboot.
 
 ## Final Stretch
+![IMG_1681.heic](https://github.com/itselijahciali/itselijahciali.github.io/blob/main/IMG_1681.heic?raw=true)
