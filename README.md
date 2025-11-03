@@ -151,6 +151,9 @@ Once that was installed though, I was able to switch to a nice theme by editing 
 
 First, I install the openssh package and enable the sshd service. This allows me to connect over the network. This is pretty helpful considering the broken screen we have.
 
+![IMG_1681.png](https://github.com/itselijahciali/itselijahciali.github.io/blob/main/IMG_1681.png?raw=true)
+> Honestly, can't tell the difference here.
+
 ## Now You See Me
 
 Finally, I want to install a desktop environment. I’m installing KDE Plasma because it’s very customizable and much cooler than the standard `gnome`
@@ -162,4 +165,5 @@ Finally, I want to install a desktop environment. I’m installing KDE Plasma be
 Once everything is installed SDDM should land me in a graphical login on the next reboot.
 
 ## Final Stretch
-![IMG_1681.png](https://github.com/itselijahciali/itselijahciali.github.io/blob/main/IMG_1681.png?raw=true)
+![IMG_1688.png](https://github.com/itselijahciali/itselijahciali.github.io/blob/main/IMG_1688.png?raw=true)
+> It's a bit tough to see, but there's a GUI in there!
