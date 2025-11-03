@@ -1,6 +1,4 @@
-<img width="1852" height="700" alt="image" src="https://github.com/user-attachments/assets/6a7c594d-e036-4c2a-a193-db777be04519" /># How to install Arch, by the way
-
-# Installation Guide
+# How to install Arch, by the way
 
 ## Acquiring Images
 
@@ -87,7 +85,7 @@ The installation guide presents a command that does not work on my system, but a
 
 So you just read that last sentence, right? The one that had the words “no errors”– turns out, the only thing worse that getting an error in Linux is not getting one but still having problems. It turns out Grub wasn’t able to find Linux at all. After 2 days of troubleshooting I finally figured out that pacstrap didn’t really install Linux. It was able to make the initramfs and everything else, but never actually made the vmlinux image. AKA, the kernel itself. Turns out this is not a trivial fix. Out of time, I turned to what everybody turns to in their darkest hour.
 
-![IMG_1681.HEIC](https://github.com/itselijahciali/itselijahciali.github.io/blob/main/IMG_1681.HEIC?raw=true)
+![IMG_1681.png](https://github.com/itselijahciali/itselijahciali.github.io/blob/main/IMG_1681.png?raw=true)
 
 I’ve never been let down by a ThinkPad, and this time would be no different. After burning an ISO onto a disk, it was clear my only way to move forward was to install Arch the way it’s developers intended– on a ThinkPad from 2012 with a broken screen. The high school laptop saves the day again!
 
@@ -137,7 +135,7 @@ After reconfiguring the network (and configuring iwd to setup DHCP) and setting 
 
 ## Probably a Good Idea
 
-The assignment doesn’t call for it, but I should definitely not be interacting as root. I install the sudo package, create an elijah user, and add me to the wheel. I then modify the sudoers file to allow anybody within the wheel group to use sudo.
+The assignment doesn’t call for it, but I should definitely not be interacting as root. I install the sudo package, create an elijah user, and add me to the wheel. Same for a codi user. I then modify the sudoers file to allow anybody within the wheel group to use sudo.
 
 Now that it’s slightly more safe to use the system on the internet, I’ll go ahead and install some other packages to make the terminal nice to use.
 
@@ -164,4 +162,4 @@ Finally, I want to install a desktop environment. I’m installing KDE Plasma be
 Once everything is installed SDDM should land me in a graphical login on the next reboot.
 
 ## Final Stretch
-![IMG_1681.heic](https://github.com/itselijahciali/itselijahciali.github.io/blob/main/IMG_1681.heic?raw=true)
+![IMG_1681.png](https://github.com/itselijahciali/itselijahciali.github.io/blob/main/IMG_1681.png?raw=true)
