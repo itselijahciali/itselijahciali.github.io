@@ -18,7 +18,7 @@ VMWare doesn’t have a native “Arch Linux” option but rather a generic “O
 
 Archboot has many more GRUB options for IPXE boot and other methods. I choose the standard boot option and it takes me to an interactive shell. From here, I should be able to continue an install like usual. Just to be sure though, I ran a `ping` command to check if the VM and install were configured for internet access.
 
-![Screenshot 2025-10-23 at 2.04.51 PM.png](How%20to%20install%20Arch,%20by%20the%20way%20293130f4ceea805b9d3bf399d341d0e6/Screenshot_2025-10-23_at_2.04.51_PM.png)
+![Screenshot 2025-10-23 at 2.04.51 PM.png](https://github.com/itselijahciali/itselijahciali.github.io/blob/main/Screenshot 2025-10-23 at 2.04.51 PM.png?raw=true)
 
 ## Setting up the preinstallation environment
 
@@ -33,7 +33,7 @@ Some basic steps are configured for me:
 
 VMWare’s 20GB drive I made is recognized by the `fdisk -l` command:
 
-![Screenshot 2025-10-23 at 2.11.50 PM.png](How%20to%20install%20Arch,%20by%20the%20way%20293130f4ceea805b9d3bf399d341d0e6/Screenshot_2025-10-23_at_2.11.50_PM.png)
+![Screenshot 2025-10-23 at 2.11.50 PM.png](https://github.com/itselijahciali/itselijahciali.github.io/blob/main/Screenshot_2025-10-23_at_2.04.51_PM.png?raw=true)
 
 Arch and most Linux distributions expect several partitions, being **root**, **swap**, and **efi**. I will make the last two first and then use the remaining size to make the root partition.
 
