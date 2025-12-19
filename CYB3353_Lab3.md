@@ -71,7 +71,7 @@ I had to modify the environment and change `INSECURE=false` to `true` to get acc
 
 ## Step 4
 `wg-easy` made it easy to create a client for both my laptop and phone, and provided profiles for each. It even included a scannable QR code for my phone. I was able to easily connect with no problems on my laptop:
-![laptop vpn](<Screenshot 2025-11-23 at 11.56.48 PM>)
+![laptop vpn](<Screenshot 2025-11-23 at 11.56.48 PM.png>)
 As well as on my iPhone:
 ![vpn config iphone](IMG_2143.PNG)
 ![vpn ip iphone](IMG_2144.PNG)
